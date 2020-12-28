@@ -30,7 +30,6 @@
         android:id="@+id/img_rice"
         android:layout_width="wrap_content"
         android:layout_height="200dp"
-        android:src="@drawable/rice"
         android:layout_below="@id/hd_rice"
         android:layout_centerHorizontal="true"
          android:layout_marginTop="16dp"
@@ -78,6 +77,7 @@
         android:textColor="@color/black"
         />
     <TextView
+        android:id="@+id/soil_desc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Loamy soil"
@@ -99,6 +99,7 @@
         android:textColor="@color/black"
         />
     <TextView
+        android:id="@+id/sow_desc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="June-July"
@@ -120,6 +121,7 @@
         android:textColor="@color/black"
         />
     <TextView
+        android:id="@+id/harvest_desc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Nov-Dec"
@@ -141,6 +143,7 @@
         android:textColor="@color/black"
         />
     <TextView
+        android:id="@+id/region_desc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="West Bengal, Punjab ,Uttar Pradesh"
@@ -162,6 +165,7 @@
         android:textColor="@color/black"
         />
     <TextView
+        android:id="@+id/temp_desc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="24 c"
@@ -183,6 +187,7 @@
         android:textColor="@color/black"
         />
     <TextView
+        android:id="@+id/rain_desc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="150 cm"
@@ -240,6 +245,7 @@
         android:textColor="@color/black"
         />
     <TextView
+        android:id="@+id/pesti_desc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Lambda-cyhalothrin, malathion and zeta-cypermethrin are all broad-spectrum pesticides used on rice."

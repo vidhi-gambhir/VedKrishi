@@ -15,7 +15,7 @@
         android:layout_height="wrap_content"
         android:padding="2dp"
         app:layoutManager="LinearLayoutManager"
-        tools:listitem="@layout/kharif_crops" />
+        tools:listitem="@layout/kharif_crops_item" />
 
 
 </RelativeLayout>

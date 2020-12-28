@@ -20,7 +20,6 @@
         android:id="@+id/img_crop"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:src="@drawable/wheat"
         android:background="@drawable/bg_parent_rounded_corner"/>
     <TextView
         android:id="@+id/txt_name_crop"

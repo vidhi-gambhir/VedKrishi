@@ -12,12 +12,12 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.vedkrishi.R;
-import com.example.vedkrishi.RecyclerAdapter;
 import com.example.vedkrishi.Season.KharifCrops.RiceActivity;
 
 public class KharifAdapter extends RecyclerView.Adapter<KharifAdapter.KharifViewHolder> {
     private Context _context;
     private String[] name;
+    private String crop="";
     private int[] image;
     private String[] desc;
 
@@ -32,7 +32,7 @@ public class KharifAdapter extends RecyclerView.Adapter<KharifAdapter.KharifView
     @Override
     public KharifViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         LayoutInflater inflater = LayoutInflater.from(parent.getContext());
-        View view = inflater.inflate(R.layout.kharif_crops,parent,false);
+        View view = inflater.inflate(R.layout.kharif_crops_item,parent,false);
         return new KharifAdapter.KharifViewHolder(view);
     }
 
@@ -54,6 +54,13 @@ public class KharifAdapter extends RecyclerView.Adapter<KharifAdapter.KharifView
     private void startactivity(String name) {
         if(name.equals("Rice")){
             Intent intent=new Intent(_context, RiceActivity.class);
+            crop="Rice";
+            intent.putExtra("crop",crop);
+            _context.startActivity(intent);
+        }else if(name.equals("Cotton")){
+            Intent intent=new Intent(_context,RiceActivity.class);
+            crop="Cotton";
+            intent.putExtra("crop",crop);
             _context.startActivity(intent);
         }
     }

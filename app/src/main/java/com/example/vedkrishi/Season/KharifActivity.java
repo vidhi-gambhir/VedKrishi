@@ -42,9 +42,9 @@ public class KharifActivity extends AppCompatActivity {
 //            }
 //        });
 
-        String[] name={"Rice","Maize","Sorghum"};
-        int[] image={R.drawable.wheat,R.drawable.wheat,R.drawable.wheat};
-        String[] desc={"bbjhbj","bvhmbjhb","bmjhbjb"};
+        String[] name={"Rice","Cotton","Maize","Oilseeds","Tea","Coffee","Sugarcane"};
+        int[] image={R.drawable.rice,R.drawable.cotton,R.drawable.maize,R.drawable.oilseeds,R.drawable.tea,R.drawable.coffee,R.drawable.sugarcane};
+        String[] desc={"bbjhbj","bvhmbjhb","bmjhbjb","hhkuh","jghj","gjhvjgv","gjjhgbjh"};
 
         recyclerView.setAdapter(new KharifAdapter(image,name,desc,getApplicationContext()));
     }

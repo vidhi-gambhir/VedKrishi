@@ -62,8 +62,10 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.Recycl
             _context.startActivity(intent);
         }else if(name.equals("Rabi")){
             Intent intent=new Intent(_context, RabiActivity.class);
+            _context.startActivity(intent);
         }else if(name.equals("Zaid")){
             Intent intent=new Intent(_context, ZaidActivity.class);
+            _context.startActivity(intent);
         }
     }
 
