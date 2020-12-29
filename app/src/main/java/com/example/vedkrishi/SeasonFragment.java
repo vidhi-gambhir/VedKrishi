@@ -16,7 +16,7 @@ public class SeasonFragment extends Fragment {
     RecyclerAdapter adapter;
     RelativeLayout tab;
     RecyclerView recyclerView;
-    View root,root2;
+    View root;
     String [] name={"Wheat","rice"};
     int[] image={android.R.drawable.ic_input_add,android.R.drawable.ic_input_add};
 
