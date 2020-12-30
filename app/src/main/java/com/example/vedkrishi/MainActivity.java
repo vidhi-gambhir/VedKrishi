@@ -2,6 +2,7 @@ package com.example.vedkrishi;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import androidx.viewpager.widget.ViewPager;
 
 import android.content.Intent;
@@ -16,14 +17,22 @@ public class MainActivity extends AppCompatActivity {
 
     TabLayout tabLayout;
     ViewPager viewPager;
+    Toolbar mToolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        mToolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(mToolbar);
         tabLayout=(TabLayout)findViewById(R.id.tabLayout);
         viewPager=(ViewPager)findViewById(R.id.viewPager);
+
+//        this.getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+//        this.getSupportActionBar().setDisplayShowHomeEnabled(true);
+//        this.getSupportActionBar().setTitle("");
+       // getSupportActionBar().setDisplayShowTitleEnabled(false);
 
         tabLayout.addTab(tabLayout.newTab().setText("Suggestion"));
         tabLayout.addTab(tabLayout.newTab().setText("Season"));
