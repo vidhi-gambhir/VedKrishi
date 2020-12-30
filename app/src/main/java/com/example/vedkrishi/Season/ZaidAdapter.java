@@ -42,6 +42,7 @@ public class ZaidAdapter extends RecyclerView.Adapter<ZaidAdapter.ZaidViewHolder
         final String Desc=desc[position];
         holder.image.setBackgroundResource(image[position]);
         holder.name.setText(title);
+        holder.desc.setText(Desc);
         holder.mview.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
