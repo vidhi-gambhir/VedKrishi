@@ -37,7 +37,7 @@ public class SeasonFragment extends Fragment {
 
 
         String[] name = {"Kharif","Rabi","Zaid"};
-        int[] image = {R.drawable.wheat,R.drawable.wheat,R.drawable.wheat};
+        int[] image = {R.drawable.kharif,R.drawable.rabi,R.drawable.zaid};
         recyclerView.setAdapter(new RecyclerAdapter(name,image,getActivity()));
         return root;
 

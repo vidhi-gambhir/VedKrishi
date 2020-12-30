@@ -5,17 +5,14 @@ import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.BaseAdapter;
-import android.widget.GridView;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.vedkrishi.ModelClass.Post;
 import com.example.vedkrishi.Season.CropList;
-import com.example.vedkrishi.Season.KharifActivity;
-import com.example.vedkrishi.Season.RabiActivity;
 import com.example.vedkrishi.Season.ZaidActivity;
 
 import java.util.List;
@@ -60,16 +57,61 @@ public class RegionAdapter extends RecyclerView.Adapter<RegionAdapter.RegionView
     }
 
     private void startactivity(String name) {
-        if(name.equals("Punjab")){
-            Intent intent=new Intent(_context, CropList.class);
-            intent.putExtra("state",name);
+        if (name.equals("Punjab")) {
+            Intent intent = new Intent(_context, CropList.class);
+            intent.putExtra("state", name);
             _context.startActivity(intent);
-        }else if(name.equals("Uttar Pradesh")){
-            Intent intent=new Intent(_context, CropList.class);
-            intent.putExtra("state",name);
+        } else if (name.equals("Uttar Pradesh")) {
+            Intent intent = new Intent(_context, CropList.class);
+            intent.putExtra("state", name);
             _context.startActivity(intent);
-        }else if(name.equals("Zaid")){
-            Intent intent=new Intent(_context, ZaidActivity.class);
+        } else if (name.equals("Haryana")) {
+            Intent intent = new Intent(_context, CropList.class);
+            intent.putExtra("state", name);
+            _context.startActivity(intent);
+        } else if (name.equals("Madhya Pradesh")) {
+            Intent intent = new Intent(_context, CropList.class);
+            intent.putExtra("state", name);
+            _context.startActivity(intent);
+        }else if (name.equals("Maharashtra")) {
+            Intent intent = new Intent(_context, CropList.class);
+            intent.putExtra("state", name);
+            _context.startActivity(intent);
+        }else if (name.equals("Gujarat")) {
+            Intent intent = new Intent(_context, CropList.class);
+            intent.putExtra("state", name);
+            _context.startActivity(intent);
+        }else if (name.equals("Assam")) {
+            Intent intent = new Intent(_context, CropList.class);
+            intent.putExtra("state", name);
+            _context.startActivity(intent);
+        }else if (name.equals("West Bengal")) {
+            Intent intent = new Intent(_context, CropList.class);
+            intent.putExtra("state", name);
+            _context.startActivity(intent);
+        }else if (name.equals("Karnataka")) {
+            Intent intent = new Intent(_context, CropList.class);
+            intent.putExtra("state", name);
+            _context.startActivity(intent);
+        }else if (name.equals("Tamil Nadu")) {
+            Intent intent = new Intent(_context, CropList.class);
+            intent.putExtra("state", name);
+            _context.startActivity(intent);
+        }else if (name.equals("Kerala")) {
+            Intent intent = new Intent(_context, CropList.class);
+            intent.putExtra("state", name);
+            _context.startActivity(intent);
+        }else if (name.equals("Andhra Pradesh")) {
+            Intent intent = new Intent(_context, CropList.class);
+            intent.putExtra("state", name);
+            _context.startActivity(intent);
+        }else if (name.equals("Odisha")) {
+            Intent intent = new Intent(_context, CropList.class);
+            intent.putExtra("state", name);
+            _context.startActivity(intent);
+        }else if (name.equals("Bihar")) {
+            Intent intent = new Intent(_context, CropList.class);
+            intent.putExtra("state", name);
             _context.startActivity(intent);
         }
     }

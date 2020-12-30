@@ -5,10 +5,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Season.CropList">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"/>
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycle_crop_list"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
         android:padding="2dp"
         app:layoutManager="LinearLayoutManager"
         tools:listitem="@layout/kharif_crops_item" />

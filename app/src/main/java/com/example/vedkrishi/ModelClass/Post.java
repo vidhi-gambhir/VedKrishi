@@ -1,4 +1,4 @@
-package com.example.vedkrishi;
+package com.example.vedkrishi.ModelClass;
 
 public class Post {
 

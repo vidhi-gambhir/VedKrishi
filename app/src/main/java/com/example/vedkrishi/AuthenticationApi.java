@@ -1,5 +1,8 @@
 package com.example.vedkrishi;
 
+import com.example.vedkrishi.ModelClass.WeatherDesc;
+import com.example.vedkrishi.ModelClass.WeatherResult;
+
 import retrofit2.Call;
 import retrofit2.http.GET;
 import retrofit2.http.Query;

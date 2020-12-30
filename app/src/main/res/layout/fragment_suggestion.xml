@@ -9,7 +9,6 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/sky"
         tools:context=".MainActivity">
 
 
@@ -42,6 +41,7 @@
             android:text="get data" />
 
         <LinearLayout
+            android:id="@+id/desc"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
@@ -70,6 +70,30 @@
             android:textColor="@color/black"
             android:textSize="20sp" />
         </LinearLayout>
+
+        <TextView
+            android:id="@+id/suggest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Here are some suggested crops:"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:visibility="gone"
+            android:layout_below="@id/desc"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycle_suggest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/suggest"
+            android:layout_marginLeft="16dp"
+            android:visibility="gone"
+            android:background="@drawable/bg_parent_rounded_corner"
+            android:layout_marginTop="4dp"
+            android:layout_marginRight="16dp"
+            android:padding="2dp"
+            app:layoutManager="LinearLayoutManager"
+            tools:listitem="@layout/kharif_crops_item" />
     </RelativeLayout>
 
 

@@ -30,9 +30,9 @@ public class ZaidActivity extends AppCompatActivity {
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
-        String[] name={"Bitter Gourd","Pumpkin","Maize","Oilseeds","Tea","Coffee","Sugarcane"};
-        int[] image={R.drawable.rice,R.drawable.cotton,R.drawable.maize,R.drawable.oilseeds,R.drawable.tea,R.drawable.coffee,R.drawable.sugarcane};
-        String[] desc={"bbjhbj","bvhmbjhb","bmjhbjb","hhkuh","jghj","gjhvjgv","gjjhgbjh"};
+        String[] name={"Bitter Gourd","Pumpkin","Jute","Cucumber","Muskmelon","Watermelon"};
+        int[] image={R.drawable.bittergourd,R.drawable.pumpkin,R.drawable.jute,R.drawable.cucumber,R.drawable.muskmelon,R.drawable.watermelon};
+        String[] desc={"bbjhbj","bvhmbjhb","bmjhbjb","hhkuh","jghj","gjhvjgv"};
 
         recyclerView.setAdapter(new KharifAdapter(image,name,desc,getApplicationContext()));
     }

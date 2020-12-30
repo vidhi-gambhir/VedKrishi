@@ -46,6 +46,78 @@ public class CropList extends AppCompatActivity {
             String[] desc={"wefsafd","sdfsdf","sdfsdf","sdfsdf","sdfsdf","sdfsdf"};
             recyclerView.setAdapter(new CropAdapter(img,name,desc,getApplicationContext()));
 
+        }else if(state.equals("Haryana")){
+            String[] name={"Wheat","Rice","Sugarcane","MuskMelon","Bitter Gourd","Bajra"};
+            int[] img={R.drawable.wheat,R.drawable.rice,R.drawable.rice,R.drawable.rice,R.drawable.rice,R.drawable.rice};
+            String[] desc={"wefsafd","sdfsdf","sdfsdf","sdfsdf","sdfsdf","sdfsdf"};
+            recyclerView.setAdapter(new CropAdapter(img,name,desc,getApplicationContext()));
+
+        }else if(state.equals("Madhya Pradesh")){
+            String[] name={"Wheat","Rice","Sugarcane","MuskMelon","Bitter Gourd","Bajra"};
+            int[] img={R.drawable.wheat,R.drawable.rice,R.drawable.rice,R.drawable.rice,R.drawable.rice,R.drawable.rice};
+            String[] desc={"wefsafd","sdfsdf","sdfsdf","sdfsdf","sdfsdf","sdfsdf"};
+            recyclerView.setAdapter(new CropAdapter(img,name,desc,getApplicationContext()));
+
+        }else if(state.equals("Maharashtra")){
+            String[] name={"Wheat","Rice","Sugarcane","MuskMelon","Bitter Gourd","Bajra"};
+            int[] img={R.drawable.wheat,R.drawable.rice,R.drawable.rice,R.drawable.rice,R.drawable.rice,R.drawable.rice};
+            String[] desc={"wefsafd","sdfsdf","sdfsdf","sdfsdf","sdfsdf","sdfsdf"};
+            recyclerView.setAdapter(new CropAdapter(img,name,desc,getApplicationContext()));
+
+        }else if(state.equals("Gujarat")){
+            String[] name={"Wheat","Rice","Sugarcane","MuskMelon","Bitter Gourd","Bajra"};
+            int[] img={R.drawable.wheat,R.drawable.rice,R.drawable.rice,R.drawable.rice,R.drawable.rice,R.drawable.rice};
+            String[] desc={"wefsafd","sdfsdf","sdfsdf","sdfsdf","sdfsdf","sdfsdf"};
+            recyclerView.setAdapter(new CropAdapter(img,name,desc,getApplicationContext()));
+
+        }else if(state.equals("Assam")){
+            String[] name={"Wheat","Rice","Sugarcane","MuskMelon","Bitter Gourd","Bajra"};
+            int[] img={R.drawable.wheat,R.drawable.rice,R.drawable.rice,R.drawable.rice,R.drawable.rice,R.drawable.rice};
+            String[] desc={"wefsafd","sdfsdf","sdfsdf","sdfsdf","sdfsdf","sdfsdf"};
+            recyclerView.setAdapter(new CropAdapter(img,name,desc,getApplicationContext()));
+
+        }else if(state.equals("West Bengal")){
+            String[] name={"Wheat","Rice","Sugarcane","MuskMelon","Bitter Gourd","Bajra"};
+            int[] img={R.drawable.wheat,R.drawable.rice,R.drawable.rice,R.drawable.rice,R.drawable.rice,R.drawable.rice};
+            String[] desc={"wefsafd","sdfsdf","sdfsdf","sdfsdf","sdfsdf","sdfsdf"};
+            recyclerView.setAdapter(new CropAdapter(img,name,desc,getApplicationContext()));
+
+        }else if(state.equals("Karnataka")){
+            String[] name={"Wheat","Rice","Sugarcane","MuskMelon","Bitter Gourd","Bajra"};
+            int[] img={R.drawable.wheat,R.drawable.rice,R.drawable.rice,R.drawable.rice,R.drawable.rice,R.drawable.rice};
+            String[] desc={"wefsafd","sdfsdf","sdfsdf","sdfsdf","sdfsdf","sdfsdf"};
+            recyclerView.setAdapter(new CropAdapter(img,name,desc,getApplicationContext()));
+
+        }else if(state.equals("Tamil Nadu")){
+            String[] name={"Wheat","Rice","Sugarcane","MuskMelon","Bitter Gourd","Bajra"};
+            int[] img={R.drawable.wheat,R.drawable.rice,R.drawable.rice,R.drawable.rice,R.drawable.rice,R.drawable.rice};
+            String[] desc={"wefsafd","sdfsdf","sdfsdf","sdfsdf","sdfsdf","sdfsdf"};
+            recyclerView.setAdapter(new CropAdapter(img,name,desc,getApplicationContext()));
+
+        }else if(state.equals("Kerala")){
+            String[] name={"Wheat","Rice","Sugarcane","MuskMelon","Bitter Gourd","Bajra"};
+            int[] img={R.drawable.wheat,R.drawable.rice,R.drawable.rice,R.drawable.rice,R.drawable.rice,R.drawable.rice};
+            String[] desc={"wefsafd","sdfsdf","sdfsdf","sdfsdf","sdfsdf","sdfsdf"};
+            recyclerView.setAdapter(new CropAdapter(img,name,desc,getApplicationContext()));
+
+        }else if(state.equals("Andhra Pradesh")){
+            String[] name={"Wheat","Rice","Sugarcane","MuskMelon","Bitter Gourd","Bajra"};
+            int[] img={R.drawable.wheat,R.drawable.rice,R.drawable.rice,R.drawable.rice,R.drawable.rice,R.drawable.rice};
+            String[] desc={"wefsafd","sdfsdf","sdfsdf","sdfsdf","sdfsdf","sdfsdf"};
+            recyclerView.setAdapter(new CropAdapter(img,name,desc,getApplicationContext()));
+
+        }else if(state.equals("Odisha")){
+            String[] name={"Wheat","Rice","Sugarcane","MuskMelon","Bitter Gourd","Bajra"};
+            int[] img={R.drawable.wheat,R.drawable.rice,R.drawable.rice,R.drawable.rice,R.drawable.rice,R.drawable.rice};
+            String[] desc={"wefsafd","sdfsdf","sdfsdf","sdfsdf","sdfsdf","sdfsdf"};
+            recyclerView.setAdapter(new CropAdapter(img,name,desc,getApplicationContext()));
+
+        }else if(state.equals("Bihar")){
+            String[] name={"Wheat","Rice","Sugarcane","MuskMelon","Bitter Gourd","Bajra"};
+            int[] img={R.drawable.wheat,R.drawable.rice,R.drawable.rice,R.drawable.rice,R.drawable.rice,R.drawable.rice};
+            String[] desc={"wefsafd","sdfsdf","sdfsdf","sdfsdf","sdfsdf","sdfsdf"};
+            recyclerView.setAdapter(new CropAdapter(img,name,desc,getApplicationContext()));
+
         }
 
 

@@ -62,6 +62,56 @@ public class RabiAdapter extends RecyclerView.Adapter<RabiAdapter.RabiViewHolder
             crop="Maize";
             intent.putExtra("crop",crop);
             _context.startActivity(intent);
+        }else if(name.equals("Mustard")){
+            Intent intent=new Intent(_context,RiceActivity.class);
+            crop="Mustard";
+            intent.putExtra("crop",crop);
+            _context.startActivity(intent);
+        }else if(name.equals("Bajra")){
+            Intent intent=new Intent(_context,RiceActivity.class);
+            crop="Bajra";
+            intent.putExtra("crop",crop);
+            _context.startActivity(intent);
+        }else if(name.equals("Oat")){
+            Intent intent=new Intent(_context,RiceActivity.class);
+            crop="Oat";
+            intent.putExtra("crop",crop);
+            _context.startActivity(intent);
+        }else if(name.equals("Peas")){
+            Intent intent=new Intent(_context,RiceActivity.class);
+            crop="Peas";
+            intent.putExtra("crop",crop);
+            _context.startActivity(intent);
+        }else if(name.equals("Chickenpeas")){
+            Intent intent=new Intent(_context,RiceActivity.class);
+            crop="Chickenpeas";
+            intent.putExtra("crop",crop);
+            _context.startActivity(intent);
+        }else if(name.equals("Masoor")){
+            Intent intent=new Intent(_context,RiceActivity.class);
+            crop="Masoor";
+            intent.putExtra("crop",crop);
+            _context.startActivity(intent);
+        }else if(name.equals("Moong")){
+            Intent intent=new Intent(_context,RiceActivity.class);
+            crop="Moong";
+            intent.putExtra("crop",crop);
+            _context.startActivity(intent);
+        }else if(name.equals("Carrot")){
+            Intent intent=new Intent(_context,RiceActivity.class);
+            crop="Carrot";
+            intent.putExtra("crop",crop);
+            _context.startActivity(intent);
+        }else if(name.equals("Raddish")){
+            Intent intent=new Intent(_context,RiceActivity.class);
+            crop="Raddish";
+            intent.putExtra("crop",crop);
+            _context.startActivity(intent);
+        }else if(name.equals("Cauliflower")){
+            Intent intent=new Intent(_context,RiceActivity.class);
+            crop="Cauliflower";
+            intent.putExtra("crop",crop);
+            _context.startActivity(intent);
         }
     }
 

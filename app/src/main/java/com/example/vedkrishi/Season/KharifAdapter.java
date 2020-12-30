@@ -62,6 +62,31 @@ public class KharifAdapter extends RecyclerView.Adapter<KharifAdapter.KharifView
             crop="Cotton";
             intent.putExtra("crop",crop);
             _context.startActivity(intent);
+        }else if(name.equals("Maize")){
+            Intent intent=new Intent(_context,RiceActivity.class);
+            crop="Maize";
+            intent.putExtra("crop",crop);
+            _context.startActivity(intent);
+        }else if(name.equals("Oilseeds")){
+            Intent intent=new Intent(_context, RiceActivity.class);
+            crop="Oilseeds";
+            intent.putExtra("crop",crop);
+            _context.startActivity(intent);
+        }else if(name.equals("Tea")){
+            Intent intent=new Intent(_context, RiceActivity.class);
+            crop="Tea";
+            intent.putExtra("crop",crop);
+            _context.startActivity(intent);
+        }else if(name.equals("Coffee")){
+            Intent intent=new Intent(_context, RiceActivity.class);
+            crop="Coffee";
+            intent.putExtra("crop",crop);
+            _context.startActivity(intent);
+        }else if(name.equals("Sugarcane")){
+            Intent intent=new Intent(_context, RiceActivity.class);
+            crop="Sugarcane";
+            intent.putExtra("crop",crop);
+            _context.startActivity(intent);
         }
     }
 

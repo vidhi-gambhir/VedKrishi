@@ -153,7 +153,7 @@ public class RiceActivity extends AppCompatActivity {
             rain.setText("75-100 cm");
             ferti.setText("Nitrogen,Potasm");
             pesti.setText("spinosad,bifenthrin");
-            image.setImageResource(R.drawable.mustard);
+            image.setImageResource(R.drawable.mustardjpeg);
 
 
         } else if (crop.equals("Bajra")) {
@@ -210,7 +210,7 @@ public class RiceActivity extends AppCompatActivity {
             rain.setText("65 to 95 cm");
             ferti.setText("Phosphorus,Nitrogen,diammonium phosphate ");
             pesti.setText("Thiram (1:1)");
-            image.setImageResource(R.drawable.chickpeas);
+            image.setImageResource(R.drawable.chickenpeas);
         } else if (crop.equals("Masoor")) {
             title.setText("Masoor");
             desc.setText("  It is one of the most important protein rich pulse crop. It is mostly eaten as Dal by splitting into 2 cotyledons, deep orange red or orange yellow in color. Whole grain is also used in various dishes. Lentil also provide a source of starch for textiles and printing. It is mixed with wheat flour in bread and cake production. India is the highest producer of lentil in the world.");
@@ -223,7 +223,7 @@ public class RiceActivity extends AppCompatActivity {
             rain.setText("100cm");
             ferti.setText("urea ");
             pesti.setText("Hexavin 50WP");
-            image.setImageResource(R.drawable.Masoor);
+            image.setImageResource(R.drawable.masoor);
         } else if (crop.equals("Moong")) {
             title.setText("Moong");
             desc.setText("  Green gram also known as moong is one of the main pulse crop of India. It is a rich source of Protein along with fibre and iron. It can be cultivated as Kharif as well as summer crop");
@@ -236,10 +236,10 @@ public class RiceActivity extends AppCompatActivity {
             rain.setText("60-90cm");
             ferti.setText("urea ");
 
-            image.setImageResource(R.drawable.Moong);
+            image.setImageResource(R.drawable.moong);
 
-        } else if (crop.equals("carrot")) {
-            title.setText("carrot");
+        } else if (crop.equals("Carrot")) {
+            title.setText("Carrot");
             desc.setText("  Carrot is a cool season crop and will develop a good colour when grown at 15°C to 20°C. The crop needs deep loose loamy soil. It requires a pH ranging from 6.0 to 7.0 for higher production. Carrot can be grown throughout the year at an elevation above 1500 metres with assured irrigation.");
             lifeSpan.setText("1-2 months");
             soil.setText("heavy soils, black cotton soils, and sandy loam soils.");
@@ -250,12 +250,12 @@ public class RiceActivity extends AppCompatActivity {
             rain.setText("20-50cm");
             ferti.setText("urea ");
 
-            image.setImageResource(R.drawable.carrot);
+            image.setImageResource(R.drawable.caroot);
 
 
         }
         else if (crop.equals("Raddish")) {
-            title.setText("Radish");
+            title.setText("Raddish");
             desc.setText(" Radish, edible root vegetable belongs to family of Cruciferae and its origin is in Mediterranean. It is crop of tropical and temperate region. It is a quick growing annual or biannual herb. Its edible roots are having different color from white to red.");
             lifeSpan.setText("1-2 months");
             soil.setText("loam,fine tilth,black soil");
@@ -281,6 +281,90 @@ public class RiceActivity extends AppCompatActivity {
             ferti.setText("Phosphorus,Nitrogen,Potasm");
             pesti.setText("Bt formulations");
             image.setImageResource(R.drawable.cauliflower);
+        }else if(crop.equals("Bitter gourd")){
+            title.setText("Bitter gourd");
+            desc.setText("Bitter gourd (Momordica charantia) is an important vegetable crop and is grown for its immature tuberculate fruits which have a unique bitter taste. It is tropical vine that belongs to a gourd family.");
+            lifeSpan.setText("110-130 days");
+            soil.setText("Sandy Loam");
+            sow.setText("Feb-March or june-july");
+            harvest.setText("12 to 16 weeks after planting.");
+            region.setText("Uttar Pradesh,Andra Pradesh, Bihar, Maharastra, Karnataka, Telangana, Maharastra");
+            temp.setText("24-27 c");
+            rain.setText("50-70 cm");
+            ferti.setText("Urea,SSP,Muriate of potash");
+            pesti.setText("Rotenon, Pyrethrum based insecticides.");
+            image.setImageResource(R.drawable.bittergourd);
         }
+        else if(crop.equals("Jute")){
+            title.setText("Jute");
+            desc.setText("Jute is a tropical plant that requires hot and humid climate. It is one of the most important natural fibres in terms of cultivation and usage. Almost 85% of the world's jute is cultivated in the Ganges Delta.");
+            lifeSpan.setText("180-360 days");
+            soil.setText("Sandy and Clay loam");
+            sow.setText("March-April");
+            harvest.setText("June to september");
+            region.setText("West Bengal, Bihar, Assam,Andhra Pradesh, Orissa, Meghalaya,Nagaland, Tripura, Uttar Pradesh");
+            temp.setText("24-35 °C");
+            rain.setText("125-200 cm");
+            ferti.setText("Urea,D.A.P and T.S.P");
+            pesti.setText("Endosulfan and fenpropathrin");
+            image.setImageResource(R.drawable.jute);
+        }
+        else if(crop.equals("Pumpkin")){
+            title.setText("Pumpkin");
+            desc.setText("India is the second largest producer of pumpkin");
+            lifeSpan.setText("3-4 months");
+            soil.setText("Loamy");
+            sow.setText("January or September");
+            harvest.setText("3 months after planting");
+            region.setText("Uttar Pradesh,Orissa,Madhya pradesh,Chattisgarh");
+            temp.setText("25-28 °C");
+            rain.setText("20-30 cm");
+            ferti.setText("Nitrogen,phosphorus,potassium");
+            pesti.setText("Benevia [Cyantraniliprole] ,Acetamipride ");
+            image.setImageResource(R.drawable.pumpkin);
+        }
+        else if(crop.equals("Cucumber")){
+            title.setText("Cucumber");
+            desc.setText("Cucumber is a widely-cultivated creeping vine plant in the Cucurbitaceae gourd family that bears cucumiform fruits, which are used as vegetables");
+            lifeSpan.setText("70 days");
+            soil.setText("Sandy Loamy");
+            sow.setText("Feb-March");
+            harvest.setText("May-June");
+            region.setText("Haryana,Madhya pradesh,Andhra pradesh,Karnataka");
+            temp.setText("25-35 °C");
+            rain.setText("120-150 cm");
+            ferti.setText("Urea,SSP,MOP");
+            pesti.setText(" Immidachloprid-17.8%SL @7ml in 10ltr of water ");
+            image.setImageResource(R.drawable.cucumber);
+        }
+        else if(crop.equals("Muskmelon")){
+            title.setText("Muskmelon");
+            desc.setText("Muskmelon is a round melon with firm, orange, moderately-sweet flesh and a thin reticulated light-brown rind.");
+            lifeSpan.setText("35-45 days");
+            soil.setText("Sandy Loamy");
+            sow.setText("November-February");
+            harvest.setText("70-100 days after sowing.");
+            region.setText("Punjab, Tamil Nadu, Uttar Pradesh, Maharashtra, and Andhra Pradesh");
+            temp.setText("18-30°C");
+            rain.setText("50-75 mm");
+            ferti.setText("Apply FYM 20 t/ha, NPK 40:60:30 kg/ha as basal and N @ 40 kg/ha 30 days after sowing");
+            pesti.setText(" Abamectin@6ml/15Ltr of water, Thiamethoxam@5gm/15Ltr of water ");
+            image.setImageResource(R.drawable.muskmelon);
+        }
+        else if(crop.equals("Watermelon")){
+            title.setText("Watermelon");
+            desc.setText("Watermelon is a flowering plant species of the Cucurbitaceae family.It is a highly cultivated fruit worldwide, with more than 1,000 varieties.");
+                    lifeSpan.setText("3-4 months");
+            soil.setText("Sandy, Sandy Loamy");
+            sow.setText("Jan-March");
+            harvest.setText("120 days after sowing.");
+            region.setText("Maharashtra, Karnataka, Tamil Nadu, Punjab, Rajasthan, Madhya Pradesh, and Uttar Pradesh");
+            temp.setText("20-30°C");
+            rain.setText("50-75 mm");
+            ferti.setText(" Nitrogen, Urea, SSP, MOP");
+            pesti.setText(" Carbendazim@400gm/200liter of water, Copper Oxychloride@400gm/200liter ");
+            image.setImageResource(R.drawable.watermelon);
+        }
+
     }
 }

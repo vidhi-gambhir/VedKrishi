@@ -30,10 +30,10 @@ public class RabiActivity extends AppCompatActivity {
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
-        String[] name={"Wheat","Maize","Maize","Oilseeds","Tea","Coffee","Sugarcane"};
-        int[] image={R.drawable.rice,R.drawable.cotton,R.drawable.maize,R.drawable.oilseeds,R.drawable.tea,R.drawable.coffee,R.drawable.sugarcane};
-        String[] desc={"bbjhbj","bvhmbjhb","bmjhbjb","hhkuh","jghj","gjhvjgv","gjjhgbjh"};
+        String[] name={"Wheat","Mustard","Bajra","Oat","Peas","Masoor","Moong","Carrot","Raddish","Cauliflower"};
+        int[] image={R.drawable.wheat,R.drawable.mustardjpeg,R.drawable.bajra,R.drawable.oat,R.drawable.peas,R.drawable.masoor,R.drawable.moong,R.drawable.caroot,R.drawable.radish,R.drawable.cauliflower};
+        String[] desc={"bbjhbj","bvhmbjhb","bmjhbjb","hhkuh","jghj","gjhvjgv","gjjhgbjh","sff","sdfsdf","dfsd"};
 
-        recyclerView.setAdapter(new KharifAdapter(image,name,desc,getApplicationContext()));
+        recyclerView.setAdapter(new RabiAdapter(image,name,desc,getApplicationContext()));
     }
 }

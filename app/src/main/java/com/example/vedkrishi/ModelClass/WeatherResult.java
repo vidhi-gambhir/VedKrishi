@@ -1,4 +1,4 @@
-package com.example.vedkrishi;
+package com.example.vedkrishi.ModelClass;
 
 import com.google.gson.annotations.SerializedName;
 

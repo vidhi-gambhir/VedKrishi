@@ -42,7 +42,6 @@ public class ZaidAdapter extends RecyclerView.Adapter<ZaidAdapter.ZaidViewHolder
         final String Desc=desc[position];
         holder.image.setBackgroundResource(image[position]);
         holder.name.setText(title);
-        holder.desc.setText(Desc);
         holder.mview.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -52,14 +51,19 @@ public class ZaidAdapter extends RecyclerView.Adapter<ZaidAdapter.ZaidViewHolder
     }
 
     private void startactivity(String name) {
-        if(name.equals("Bitter Ground")){
+        if(name.equals("Bitter Groud")){
             Intent intent=new Intent(_context, RiceActivity.class);
-            crop="Bitter Ground";
+            crop="Bitter Groud";
             intent.putExtra("crop",crop);
             _context.startActivity(intent);
         }else if(name.equals("Pumpkin")){
             Intent intent=new Intent(_context,RiceActivity.class);
             crop="Pumpkin";
+            intent.putExtra("crop",crop);
+            _context.startActivity(intent);
+        }else if(name.equals("Jute")){
+            Intent intent=new Intent(_context,RiceActivity.class);
+            crop="Jute";
             intent.putExtra("crop",crop);
             _context.startActivity(intent);
         }

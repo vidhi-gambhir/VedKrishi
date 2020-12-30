@@ -27,7 +27,7 @@ public class RegionFragment extends Fragment {
         recyclerView=root.findViewById(R.id.recycle_region);
         recyclerView.setLayoutManager(new GridLayoutManager(getContext(), 2));
         String[] name = {"Punjab","Uttar Pradesh","Haryana","Madhya Pradesh","Maharashtra","Gujarat","Assam","West Bengal","Karnataka","Tamil Nadu","Kerala","Andhra Pradesh","Odisha","Bihar"};
-        int[] image = {R.drawable.punjab,R.drawable.punjab,R.drawable.punjab,R.drawable.punjab,R.drawable.punjab,R.drawable.punjab,R.drawable.punjab,R.drawable.punjab,R.drawable.punjab,R.drawable.punjab,R.drawable.punjab,R.drawable.punjab,R.drawable.punjab,R.drawable.punjab};
+        int[] image = {R.drawable.punjab,R.drawable.upjpeg,R.drawable.haryana,R.drawable.mp,R.drawable.maharashtra,R.drawable.gujarat,R.drawable.assam,R.drawable.wb,R.drawable.karnataka,R.drawable.tamilnadu,R.drawable.kerala,R.drawable.ap,R.drawable.odishajpeg,R.drawable.biharjpeg};
         recyclerView.setAdapter(new RegionAdapter(name,image,getActivity()));
 
         return root;

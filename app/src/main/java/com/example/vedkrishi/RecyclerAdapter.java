@@ -11,6 +11,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.vedkrishi.ModelClass.Post;
 import com.example.vedkrishi.Season.KharifActivity;
 import com.example.vedkrishi.Season.RabiActivity;
 import com.example.vedkrishi.Season.ZaidActivity;
