@@ -34,6 +34,6 @@ public class ZaidActivity extends AppCompatActivity {
         int[] image={R.drawable.bittergourd,R.drawable.pumpkin,R.drawable.jute,R.drawable.cucumber,R.drawable.muskmelon,R.drawable.watermelon};
         String[] desc={"bbjhbj","bvhmbjhb","bmjhbjb","hhkuh","jghj","gjhvjgv"};
 
-        recyclerView.setAdapter(new KharifAdapter(image,name,desc,getApplicationContext()));
+        recyclerView.setAdapter(new ZaidAdapter(image,name,getApplicationContext()));
     }
 }

@@ -34,6 +34,6 @@ public class RabiActivity extends AppCompatActivity {
         int[] image={R.drawable.wheat,R.drawable.mustardjpeg,R.drawable.bajra,R.drawable.oat,R.drawable.peas,R.drawable.masoor,R.drawable.moong,R.drawable.caroot,R.drawable.radish,R.drawable.cauliflower};
         String[] desc={"bbjhbj","bvhmbjhb","bmjhbjb","hhkuh","jghj","gjhvjgv","gjjhgbjh","sff","sdfsdf","dfsd"};
 
-        recyclerView.setAdapter(new RabiAdapter(image,name,desc,getApplicationContext()));
+        recyclerView.setAdapter(new RabiAdapter(image,name,getApplicationContext()));
     }
 }

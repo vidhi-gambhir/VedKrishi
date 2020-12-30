@@ -21,10 +21,9 @@ public class RabiAdapter extends RecyclerView.Adapter<RabiAdapter.RabiViewHolder
     private int[] image;
     private String[] desc;
 
-    public RabiAdapter(int[] image, String[] name, String[] desc,Context context) {
+    public RabiAdapter(int[] image, String[] name,Context context) {
         this.image=image;
         this.name=name;
-        this.desc=desc;
         _context=context;
     }
 
@@ -39,10 +38,8 @@ public class RabiAdapter extends RecyclerView.Adapter<RabiAdapter.RabiViewHolder
     @Override
     public void onBindViewHolder(@NonNull RabiAdapter.RabiViewHolder holder, int position) {
         final String title=name[position];
-        final String Desc=desc[position];
         holder.image.setBackgroundResource(image[position]);
         holder.name.setText(title);
-        holder.desc.setText(Desc);
         holder.mview.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -124,14 +121,12 @@ public class RabiAdapter extends RecyclerView.Adapter<RabiAdapter.RabiViewHolder
     public class RabiViewHolder extends RecyclerView.ViewHolder {
         private ImageView image;
         private TextView name;
-        private TextView desc;
         public View mview;
         public RabiViewHolder(@NonNull View itemView) {
             super(itemView);
             mview=itemView;
             image=itemView.findViewById(R.id.img_crop);
             name=itemView.findViewById(R.id.txt_name_crop);
-            desc=itemView.findViewById(R.id.txt_crop_desc);
         }
     }
 }

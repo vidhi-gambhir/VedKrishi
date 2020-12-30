@@ -71,6 +71,11 @@
         android:layout_marginTop="4dp"
         android:textSize="16dp"
         />
+            <LinearLayout
+                android:id="@+id/ll_soil"
+                android:layout_width="wrap_content"
+                android:layout_below="@id/life_rice"
+                android:layout_height="wrap_content">
     <TextView
         android:id="@+id/soil_rice"
         android:layout_width="wrap_content"
@@ -93,12 +98,18 @@
         android:layout_marginTop="4dp"
         android:textSize="16dp"
         />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ll_sow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll_soil">
     <TextView
         android:id="@+id/sow_month"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Sowing Month:"
-        android:layout_below="@id/soil_rice"
+        android:layout_below="@id/ll_soil"
         android:layout_marginTop="4dp"
         android:textSize="16dp"
         android:textStyle="bold|italic"
@@ -111,16 +122,22 @@
         android:text="June-July"
         android:layout_toRightOf="@id/sow_month"
         android:layout_marginLeft="4dp"
-        android:layout_below="@id/soil_rice"
+        android:layout_below="@id/ll_soil"
         android:layout_marginTop="4dp"
         android:textSize="16dp"
         />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ll_harvest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll_sow">
     <TextView
         android:id="@+id/harvest_month"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Harvest Month:"
-        android:layout_below="@id/sow_month"
+        android:layout_below="@id/ll_sow"
         android:layout_marginTop="4dp"
         android:textSize="16dp"
         android:textStyle="bold|italic"
@@ -133,10 +150,16 @@
         android:text="Nov-Dec"
         android:layout_toRightOf="@id/harvest_month"
         android:layout_marginLeft="4dp"
-        android:layout_below="@id/sow_month"
+        android:layout_below="@id/ll_sow"
         android:layout_marginTop="4dp"
         android:textSize="16dp"
         />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ll_region"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll_harvest">
     <TextView
         android:id="@+id/region"
         android:layout_width="wrap_content"
@@ -159,12 +182,13 @@
         android:layout_marginTop="4dp"
         android:textSize="16dp"
         />
+            </LinearLayout>
     <TextView
         android:id="@+id/temp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Temperature:"
-        android:layout_below="@id/region"
+        android:layout_below="@id/ll_region"
         android:layout_marginTop="4dp"
         android:textSize="16dp"
         android:textStyle="bold|italic"
@@ -177,7 +201,7 @@
         android:text="24 c"
         android:layout_toRightOf="@id/temp"
         android:layout_marginLeft="4dp"
-        android:layout_below="@id/region"
+        android:layout_below="@id/ll_region"
         android:layout_marginTop="4dp"
         android:textSize="16dp"
         />

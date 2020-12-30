@@ -21,10 +21,9 @@ public class ZaidAdapter extends RecyclerView.Adapter<ZaidAdapter.ZaidViewHolder
     private int[] image;
     private String[] desc;
 
-    public ZaidAdapter(int[] image, String[] name, String[] desc,Context context) {
+    public ZaidAdapter(int[] image, String[] name,Context context) {
         this.image=image;
         this.name=name;
-        this.desc=desc;
         _context=context;
     }
 
@@ -39,10 +38,8 @@ public class ZaidAdapter extends RecyclerView.Adapter<ZaidAdapter.ZaidViewHolder
     @Override
     public void onBindViewHolder(@NonNull ZaidAdapter.ZaidViewHolder holder, int position) {
         final String title=name[position];
-        final String Desc=desc[position];
         holder.image.setBackgroundResource(image[position]);
         holder.name.setText(title);
-        holder.desc.setText(Desc);
         holder.mview.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -52,9 +49,9 @@ public class ZaidAdapter extends RecyclerView.Adapter<ZaidAdapter.ZaidViewHolder
     }
 
     private void startactivity(String name) {
-        if(name.equals("Bitter Groud")){
+        if(name.equals("Bitter Gourd")){
             Intent intent=new Intent(_context, RiceActivity.class);
-            crop="Bitter Groud";
+            crop="Bitter Gourd";
             intent.putExtra("crop",crop);
             _context.startActivity(intent);
         }else if(name.equals("Pumpkin")){
@@ -65,6 +62,21 @@ public class ZaidAdapter extends RecyclerView.Adapter<ZaidAdapter.ZaidViewHolder
         }else if(name.equals("Jute")){
             Intent intent=new Intent(_context,RiceActivity.class);
             crop="Jute";
+            intent.putExtra("crop",crop);
+            _context.startActivity(intent);
+        }else if(name.equals("Cucumber")){
+            Intent intent=new Intent(_context,RiceActivity.class);
+            crop="Cucumber";
+            intent.putExtra("crop",crop);
+            _context.startActivity(intent);
+        }else if(name.equals("Muskmelon")){
+            Intent intent=new Intent(_context,RiceActivity.class);
+            crop="Muskmelon";
+            intent.putExtra("crop",crop);
+            _context.startActivity(intent);
+        }else if(name.equals("Watermelon")){
+            Intent intent=new Intent(_context,RiceActivity.class);
+            crop="Watermelon";
             intent.putExtra("crop",crop);
             _context.startActivity(intent);
         }
@@ -79,14 +91,12 @@ public class ZaidAdapter extends RecyclerView.Adapter<ZaidAdapter.ZaidViewHolder
     public class ZaidViewHolder extends RecyclerView.ViewHolder {
         private ImageView image;
         private TextView name;
-        private TextView desc;
         public View mview;
         public ZaidViewHolder(@NonNull View itemView) {
             super(itemView);
             mview=itemView;
             image=itemView.findViewById(R.id.img_crop);
             name=itemView.findViewById(R.id.txt_name_crop);
-            desc=itemView.findViewById(R.id.txt_crop_desc);
         }
     }
 }

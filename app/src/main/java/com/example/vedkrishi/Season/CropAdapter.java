@@ -22,10 +22,9 @@ public class CropAdapter extends RecyclerView.Adapter<CropAdapter.CropViewHolder
     private int[] image;
     private String[] desc;
 
-    public CropAdapter(int[] image, String[] name, String[] desc,Context context) {
+    public CropAdapter(int[] image, String[] name,Context context) {
         this.image=image;
         this.name=name;
-        this.desc=desc;
         _context=context;
     }
 
@@ -40,10 +39,8 @@ public class CropAdapter extends RecyclerView.Adapter<CropAdapter.CropViewHolder
     @Override
     public void onBindViewHolder(@NonNull CropAdapter.CropViewHolder holder, int position) {
         final String title=name[position];
-        final String Desc=desc[position];
         holder.image.setBackgroundResource(image[position]);
         holder.name.setText(title);
-        holder.desc.setText(Desc);
         holder.mview.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -93,11 +90,6 @@ public class CropAdapter extends RecyclerView.Adapter<CropAdapter.CropViewHolder
         else if(name.equals("Wheat")){
             Intent intent=new Intent(_context, RiceActivity.class);
             crop="Wheat";
-            intent.putExtra("crop",crop);
-            _context.startActivity(intent);
-        }else if(name.equals("Maize")){
-            Intent intent=new Intent(_context,RiceActivity.class);
-            crop="Maize";
             intent.putExtra("crop",crop);
             _context.startActivity(intent);
         }else if(name.equals("Mustard")){
@@ -152,9 +144,9 @@ public class CropAdapter extends RecyclerView.Adapter<CropAdapter.CropViewHolder
             _context.startActivity(intent);
         }
 
-        else if(name.equals("Bitter Ground")){
+        else if(name.equals("Bitter Gourd")){
             Intent intent=new Intent(_context, RiceActivity.class);
-            crop="Bitter Ground";
+            crop="Bitter Gourd";
             intent.putExtra("crop",crop);
             _context.startActivity(intent);
         }else if(name.equals("Pumpkin")){
@@ -165,6 +157,16 @@ public class CropAdapter extends RecyclerView.Adapter<CropAdapter.CropViewHolder
         }else if(name.equals("Jute")){
             Intent intent=new Intent(_context,RiceActivity.class);
             crop="Jute";
+            intent.putExtra("crop",crop);
+            _context.startActivity(intent);
+        }else if(name.equals("Coconut")){
+            Intent intent=new Intent(_context,RiceActivity.class);
+            crop="Coconut";
+            intent.putExtra("crop",crop);
+            _context.startActivity(intent);
+        }else if(name.equals("Pepper")){
+            Intent intent=new Intent(_context,RiceActivity.class);
+            crop="Pepper";
             intent.putExtra("crop",crop);
             _context.startActivity(intent);
         }
@@ -179,14 +181,12 @@ public class CropAdapter extends RecyclerView.Adapter<CropAdapter.CropViewHolder
     public class CropViewHolder extends RecyclerView.ViewHolder {
         private ImageView image;
         private TextView name;
-        private TextView desc;
         public View mview;
         public CropViewHolder(@NonNull View itemView) {
             super(itemView);
             mview=itemView;
             image=itemView.findViewById(R.id.img_crop);
             name=itemView.findViewById(R.id.txt_name_crop);
-            desc=itemView.findViewById(R.id.txt_crop_desc);
         }
     }
 }

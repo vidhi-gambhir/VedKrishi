@@ -11,8 +11,12 @@
         android:layout_height="match_parent"
         tools:context=".MainActivity">
 
-
-
+        <LinearLayout
+            android:id="@+id/ll_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerHorizontal="true">
         <EditText
 
             android:id="@+id/editText"
@@ -28,7 +32,7 @@
 
         <Button
             android:id="@+id/button"
-            android:layout_width="wrap_content"
+            android:layout_width="30dp"
             android:layout_height="40dp"
             android:layout_marginLeft="4dp"
             android:layout_toRightOf="@id/editText"
@@ -37,15 +41,15 @@
             android:textColor="@color/white"
             android:foreground="?android:attr/selectableItemBackground"
             android:textStyle="bold"
-            android:background="@drawable/bg_button"
-            android:text="get data" />
+            android:background="@drawable/search" />
+        </LinearLayout>
 
         <LinearLayout
             android:id="@+id/desc"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:layout_below="@id/editText"
+            android:layout_below="@id/ll_search"
             android:layout_centerHorizontal="true">
             <TextView
                 android:id="@+id/weather_desc"

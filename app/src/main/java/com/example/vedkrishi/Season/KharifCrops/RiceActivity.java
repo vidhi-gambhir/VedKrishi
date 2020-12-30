@@ -104,8 +104,8 @@ public class RiceActivity extends AppCompatActivity {
             desc.setText("Sugarcane is an important cash crop. India stands at 2nd position among all countries in the world in its production.");
             lifeSpan.setText("7-8 months");
             soil.setText("Loam");
-            sow.setText("Subtropical-'September-October & February-March', ");
-            harvest.setText("10-18 months stage, after planting");
+            sow.setText("Subtropical-'Sept-Oct & Feb-March' ");
+            harvest.setText("10-18 months after planting");
             region.setText("Uttar Pradesh,Andra Pradesh, Bihar, Maharastra, Karnataka");
             temp.setText("20-26 c");
             rain.setText("75-150 cm");
@@ -281,8 +281,8 @@ public class RiceActivity extends AppCompatActivity {
             ferti.setText("Phosphorus,Nitrogen,Potasm");
             pesti.setText("Bt formulations");
             image.setImageResource(R.drawable.cauliflower);
-        }else if(crop.equals("Bitter gourd")){
-            title.setText("Bitter gourd");
+        }else if(crop.equals("Bitter Gourd")){
+            title.setText("Bitter Gourd");
             desc.setText("Bitter gourd (Momordica charantia) is an important vegetable crop and is grown for its immature tuberculate fruits which have a unique bitter taste. It is tropical vine that belongs to a gourd family.");
             lifeSpan.setText("110-130 days");
             soil.setText("Sandy Loam");
@@ -354,7 +354,7 @@ public class RiceActivity extends AppCompatActivity {
         else if(crop.equals("Watermelon")){
             title.setText("Watermelon");
             desc.setText("Watermelon is a flowering plant species of the Cucurbitaceae family.It is a highly cultivated fruit worldwide, with more than 1,000 varieties.");
-                    lifeSpan.setText("3-4 months");
+            lifeSpan.setText("3-4 months");
             soil.setText("Sandy, Sandy Loamy");
             sow.setText("Jan-March");
             harvest.setText("120 days after sowing.");
@@ -364,6 +364,32 @@ public class RiceActivity extends AppCompatActivity {
             ferti.setText(" Nitrogen, Urea, SSP, MOP");
             pesti.setText(" Carbendazim@400gm/200liter of water, Copper Oxychloride@400gm/200liter ");
             image.setImageResource(R.drawable.watermelon);
+        }else if (crop.equals("Coconut")){
+            title.setText("Coconut");
+            desc.setText("Coconut tree is a member of plam tree family.They grow upto 30m tall,with pinnate leaves 4m long.");
+            lifeSpan.setText("7-8 months");
+            soil.setText("alluvial,red sandy loam");
+            sow.setText("May-June");
+            harvest.setText("Apirl-June");
+            region.setText("Kerala,Tamil Nadu,Karnataka,Goa");
+            temp.setText("20-32 C");
+            rain.setText("200 cm");
+            ferti.setText("Urea,Phosphate,Potash");
+            pesti.setText("Malathion 50 EC 2ml/lt");
+            image.setImageResource(R.drawable.coconut);
+        }else if (crop.equals("Pepper")){
+            title.setText("Pepper");
+            desc.setText("Pepper is grown mainly as a rainfedcrop.It require humidity and warm climate.");
+            lifeSpan.setText("4 yrs to mature");
+            soil.setText("sandy loam");
+            sow.setText("May-June");
+            harvest.setText("Nov-Feb");
+            region.setText("Karnataka,Kerala,Tamil Nadu");
+            temp.setText("24-29 C");
+            rain.setText("250 cm");
+            ferti.setText("Phosphorus,Nitogen");
+            pesti.setText("Neem oil");
+            image.setImageResource(R.drawable.pepper);
         }
 
     }

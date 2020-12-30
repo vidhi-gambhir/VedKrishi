@@ -114,7 +114,7 @@ public class SuggestionFragment extends Fragment {
                             }
                             suggest.setVisibility(View.VISIBLE);
                             recyclerView.setVisibility(View.VISIBLE);
-                            recyclerView.setAdapter(new CropAdapter(cropimage,cropname,crop_desc,getContext()));
+                            recyclerView.setAdapter(new CropAdapter(cropimage,cropname,getContext()));
 
 
                         }else if(response.code()==404){
