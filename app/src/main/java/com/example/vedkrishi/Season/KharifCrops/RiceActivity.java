@@ -125,9 +125,92 @@ public class RiceActivity extends AppCompatActivity {
             ferti.setText("Well-composted Organic manure");
             pesti.setText("Chlorpyrifos, Endosulpan, Methylparathion");
             image.setImageResource(R.drawable.coffee);
+        } else if(crop.equals("Bitter guard")){
+            title.setText("Bitter guard");
+            desc.setText("Bitter gourd (Momordica charantia) is an important vegetable crop and is grown for its immature tuberculate fruits which have a unique bitter taste. It is tropical vine that belongs to a gourd family.");
+            lifeSpan.setText("110-130 days");
+            soil.setText("Sandy Loam");
+            sow.setText("Feb-March or june-july");
+            harvest.setText("12 to 16 weeks after planting.");
+            region.setText("Uttar Pradesh,Andra Pradesh, Bihar, Maharastra, Karnataka, Telangana, Maharastra");
+            temp.setText("24-27 c");
+            rain.setText("50-70 cm");
+            ferti.setText("Urea,SSP,Muriate of potash");
+            pesti.setText("Rotenon, Pyrethrum based insecticides.");
+            image.setImageResource(R.drawable.bitterguard);
         }
-
-
+         else if(crop.equals("jute")){
+            title.setText("Jute");
+            desc.setText("Jute is a tropical plant that requires hot and humid climate. It is one of the most
+important natural fibres in terms of cultivation and usage. Almost 85% of the world's
+jute is cultivated in the Ganges Delta.");
+            lifeSpan.setText("180-360 days");
+            soil.setText("Sandy and Clay loam");
+            sow.setText("March-April");
+            harvest.setText("June to september");
+            region.setText("West Bengal, Bihar, Assam,Andhra Pradesh, Orissa, Meghalaya,Nagaland, Tripura, Uttar Pradesh");
+            temp.setText("24-35 °C");
+            rain.setText("125-200 cm");
+            ferti.setText("Urea,D.A.P and T.S.P");
+            pesti.setText("Endosulfan and fenpropathrin");
+            image.setImageResource(R.drawable.jute);
+        }
+         else if(crop.equals("Pumpkin")){
+            title.setText("Pumpkin");
+            desc.setText("India is the second largest producer of pumpkin");
+            lifeSpan.setText("3-4 months");
+            soil.setText("Loamy");
+            sow.setText("January or September");
+            harvest.setText("3 months after planting");
+            region.setText("Uttar Pradesh,Orissa,Madhya pradesh,Chattisgarh");
+            temp.setText("25-28 °C");
+            rain.setText("20-30 cm");
+            ferti.setText("Nitrogen,phosphorus,potassium");
+            pesti.setText("Benevia [Cyantraniliprole] ,Acetamipride ");
+            image.setImageResource(R.drawable.pumpkin);
+        }
+         else if(crop.equals("Cucumber")){
+            title.setText("Cucumber");
+            desc.setText("Cucumber is a widely-cultivated creeping vine plant in the Cucurbitaceae gourd family that bears cucumiform fruits, which are used as vegetables");
+            lifeSpan.setText("70 days");
+            soil.setText("Sandy Loamy");
+            sow.setText("Feb-March");
+            harvest.setText("May-June");
+            region.setText("Haryana,Madhya pradesh,Andhra pradesh,Karnataka");
+            temp.setText("25-35 °C");
+            rain.setText("120-150 cm");
+            ferti.setText("Urea,SSP,MOP");
+            pesti.setText(" Immidachloprid-17.8%SL @7ml in 10ltr of water ");
+            image.setImageResource(R.drawable.cucumber);
+        }
+         else if(crop.equals("Muskmelon")){
+            title.setText("Muskmelon");
+            desc.setText("Muskmelon is a round melon with firm, orange, moderately-sweet flesh and a thin reticulated light-brown rind.");
+            lifeSpan.setText("35-45 days");
+            soil.setText("Sandy Loamy");
+            sow.setText("November-February");
+            harvest.setText("70-100 days after sowing.");
+            region.setText("Punjab, Tamil Nadu, Uttar Pradesh, Maharashtra, and Andhra Pradesh");
+            temp.setText("18-30°C");
+            rain.setText("50-75 mm");
+            ferti.setText("Apply FYM 20 t/ha, NPK 40:60:30 kg/ha as basal and N @ 40 kg/ha 30 days after sowing");
+            pesti.setText(" Abamectin@6ml/15Ltr of water, Thiamethoxam@5gm/15Ltr of water ");
+            image.setImageResource(R.drawable.muskmelon);
+        }
+         else if(crop.equals("Watermelon")){
+            title.setText("Watermelon");
+            desc.setText(Watermelon is a flowering plant species of the Cucurbitaceae family.It is a highly cultivated fruit worldwide, with more than 1,000 varieties.");
+            lifeSpan.setText("3-4 months");
+            soil.setText("Sandy, Sandy Loamy");
+            sow.setText("Jan-March");
+            harvest.setText("120 days after sowing.");
+            region.setText("Maharashtra, Karnataka, Tamil Nadu, Punjab, Rajasthan, Madhya Pradesh, and Uttar Pradesh");
+            temp.setText("20-30°C");
+            rain.setText("50-75 mm");
+            ferti.setText(" Nitrogen, Urea, SSP, MOP");
+            pesti.setText(" Carbendazim@400gm/200liter of water, Copper Oxychloride@400gm/200liter ");
+            image.setImageResource(R.drawable.watermelon);
+        }
 
     }
 }
